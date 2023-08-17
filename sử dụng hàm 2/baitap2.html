@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf8">
+
+    <!-- Title tag -->
+    <title>bai tap 2</title>
+
+</head>
+
+<body>
+    <script>
+        //Bài 2: Viết hàm tính diện tích, hàm tính chu vi hình tròn. Gọi hàm vừa xây dựng được.
+        //DT = PI x r x r
+        //CV = 2 x PI x r
+
+        const r = Number(prompt("Nhap vao ban kinh: "));
+        const PI = 3.14;
+
+        function chuVi(r) {
+            const chuVi = (2 * PI * r).toFixed(2);
+            return chuVi;
+        }
+        
+        function dienTich(r){
+            const dienTich=(PI*r*r).toFixed(2);
+            return dienTich;
+        }
+
+        console.log("Chu vi hinh tron: " + chuVi(r));
+        console.log("Dien tich hinh tron: " + dienTich(r));
+    </script>
+</body>
+
+</html>
